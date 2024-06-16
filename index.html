@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Local 100% privado</title>
+    <style>
+      body {
+        font-family: "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background-color: #000;
+        color: #fff;
+        display: grid;
+        place-items: center;
+        height: 100dvh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li class="message bot">
+          <span>GPT</span>
+          <span>Esta es la respuesta del bot</span>
+        </li>
+
+        <li class="message user">
+          <span>T</span>
+          <span>Esta es la respuesta del usuario</span>
+        </li>
+
+        <li class="message user">
+          <span>GPT</span>
+          <span
+            >Est es la respuesta del usuario y es una respuesta muy larga para
+            ver que no se rompe nada</span
+          >
+        </li>
+      </ul>
+    </main>
+
+    <form>
+      <input placeholder="Escribe tu mensaje aqui..." />
+      <button>Enviar</button>
+    </form>
+    <template id="message-template">
+      <li class="message">
+        <span></span>
+        <span></span>
+      </li>
+    </template>
+  </body>
+</html>
