@@ -121,7 +121,7 @@
       const $messages = $("ul");
       const $main = $("main");
       const $template = $("#message-template");
-      const SELECTED_MODEL = "gemma-2b-it-q4f32_1-MLC";
+      const SELECTED_MODEL = "stablelm-2-zephyr-1_6b-q4f32_1-MLC-1k";
       const $info = $("small");
 
       let messages = [];
@@ -186,23 +186,7 @@
   </head>
   <body>
     <main>
-      <ul>
-        <li class="message bot">
-          <span>GPT</span>
-          <p>Esta es la respuesta del bot</p>
-        </li>
-        <li class="message user">
-          <span>T</span>
-          <p>Esta es la respuesta del usuario</p>
-        </li>
-        <li class="message user">
-          <span>T</span>
-          <p>
-            Esta es la respuesta del usuario y es una respuesta muy larga para
-            ver que no se rompe nada
-          </p>
-        </li>
-      </ul>
+      <ul></ul>
     </main>
     <form>
       <input placeholder="Escribe tu mensaje aqui..." />
